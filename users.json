@@ -1,0 +1,16 @@
+[
+    {
+        "name":"Eman",
+        "email":"eman@gmail.com",
+        "password":"eman2022",
+        "phone":"0912123238",
+        "role":"admin"
+    },
+    {
+        "name":"Wigdan",
+        "email":"wigdan@gmail.com",
+        "password":"wigdan2022",
+        "phone":"0912123222",
+        "role":"user"
+    }
+]
