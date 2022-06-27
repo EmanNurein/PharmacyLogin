@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const mongo = require('./mongodb');
+const db = require('./mongodb');
 // const port = 5000;
 const cors = require('cors');
 app.use(cors());
