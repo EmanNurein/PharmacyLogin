@@ -8,14 +8,12 @@ const MongoClient = require.MongoClient;
 const dotenv = require('dotenv');
 dotenv.config()
 let port = process.env.PORT || 8230;
-import mongoose from 'mongoose'
 
-mongoose.connect("mongodb+srv://eman:zBpbhFss67XFjl83@cluster0.bvz0d.mongodb.net/emaapharmacy?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://eman:zBpbhFss67XFjl83@cluster0.bvz0d.mongodb.net/janlogin?retryWrites=true&w=majority");
 
 
 const AuthController = require('./controller/authController');
 const { default: mongoose } = require('mongoose');
-// const { default: mongoose } = require('mongoose');
 app.use('/api/auth', AuthController);
 
 app.listen(port,() => {
