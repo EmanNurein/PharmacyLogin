@@ -4,11 +4,10 @@ const db = require('./db');
 // const port = 5000;
 const cors = require('cors');
 app.use(cors());
-const mongo = require('mongodb');
-const MongoClient = require.MongoClient;
+// const MongoClient = require.MongoClient;
 const dotenv = require('dotenv');
 dotenv.config()
-// let port = process.env.PORT || 8230;
+let port = process.env.PORT || 8230;
 
 const mongoUrl = "mongodb+srv://eman1:od17Q0gnBavMa16h@cluster0.bvz0d.mongodb.net/emaapharmacy?retryWrites=true&w=majority";
 
