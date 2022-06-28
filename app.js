@@ -9,7 +9,7 @@ const dotenv = require('dotenv');
 dotenv.config()
 let port = process.env.PORT || 8230;
 
-const mongoUrl = "mongodb+srv://eman1:od17Q0gnBavMa16h@cluster0.bvz0d.mongodb.net/janlogin?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://mongodb+srv://eman:zBpbhFss67XFjl83@cluster0.bvz0d.mongodb.net/emaapharmacy?retryWrites=true&w=majority";
 
 
 const AuthController = require('./controller/authController');
