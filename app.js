@@ -7,7 +7,7 @@ app.use(cors());
 const MongoClient = require.MongoClient;
 const dotenv = require('dotenv');
 dotenv.config()
-// let port = process.env.PORT || 8230;
+let port = process.env.PORT || 8230;
 
 const mongoUrl = "mongodb+srv://mongodb+srv://eman:zBpbhFss67XFjl83@cluster0.bvz0d.mongodb.net/emaapharmacy?retryWrites=true&w=majority";
 
