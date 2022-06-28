@@ -5,7 +5,6 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const config = require('../config');
 const User = require('../model/userSchema');
-const mongoose = require('mongoose');
 
 
 router.use(bodyParser.urlencoded({extended:true}));
