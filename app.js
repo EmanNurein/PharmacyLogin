@@ -13,7 +13,7 @@ const mongoUrl = "mongodb+srv://mongodb+srv://eman:zBpbhFss67XFjl83@cluster0.bvz
 
 
 const AuthController = require('./controller/authController');
-// const { default: mongoose } = require('mongoose');
+const { default: mongoose } = require('mongoose');
 app.use('/api/auth', AuthController);
 
 app.listen(port,() => {
