@@ -7,7 +7,7 @@ app.use(cors());
 const MongoClient = require.MongoClient;
 const dotenv = require('dotenv');
 dotenv.config()
-// let port = process.env.PORT || 8230;
+let port = process.env.PORT || 8230;
 
 const mongoUrl ="mongodb+srv://eman1:H6F2N7ruUOYke0qp@cluster0.bvz0d.mongodb.net/janlogin?retryWrites=true&w=majority";
 
