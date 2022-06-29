@@ -2,30 +2,38 @@
 
 # GetAllUser
 
-(GET)> http://localhost:5000/api/auth/users
+(GET)> http://localhost:5000/api/auth/users  
+ https://pharm-loginapp.herokuapp.com/users
 
 # Register
 
 (POST)> http://localhost:5000/api/auth/register
 (body) => {
-"name":"Samah",
-"email":"samah@hotmail.com",
-"password":"1234567",
-"phone":"0914442545",
+{
+"name":"Mutasim",
+"email":"mutasim@hotmail.com",
+"password":"june2022",
+"phone":"0914432545",
 "role":"user"
 }
+
+https://pharm-loginapp.herokuapp.com/register
 
 # Login
 
 (POST) => http://localhost:5000/api/auth/login
 (body) => {
-"email":"samah@hotmail.com",
-"password":"1234567"
+"email":"mutasim@hotmail.com",
+"password":"june2022"
 }
 #(Response)=> {auth:true,token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+
+https://pharm-loginapp.herokuapp.com/login
 
 # UserInfo
 
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
-("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjhkY2EwYjUzNWQ4ZDQ1NTgzN2EwNSIsImlhdCI6MTY1NjI4MjMxNCwiZXhwIjoxNjU2MzY4NzE0fQ.3TolynyEvkeY7OTu4bjH8E1EvgrrDK61q_jsFbWqQGg")
+("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmMyYWMyNjhlODM1ZGU3ODZiNmRiZCIsImlhdCI6MTY1NjQ5OTA4NywiZXhwIjoxNjU2NTg1NDg3fQ.vqh5_Et7MKF9QAuWsvLnfTaS1UP_R3VVb0GEWVBuw6U")
+
+https://pharm-loginapp.herokuapp.com/userinfo
